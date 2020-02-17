@@ -1,7 +1,7 @@
 import React from 'react'
-import './Summary.css'
+import './FeatureOption.css'
 
-class Summary extends React.Component {
+class FeatureOption extends React.Component {
     render() {
         return (
             <div>
@@ -11,4 +11,4 @@ class Summary extends React.Component {
     }
 }
 
-export default Summary
+export default FeatureOption

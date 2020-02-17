@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
+import './App.css'
+import Cart from '../Cart/Cart'
+import FeaturesList from '../FeaturesList/FeaturesList'
 
 // Normalizes string as a slug - a string that is safe to use
 // in both URLs and html attributes
 import slugify from 'slugify';
 
 import './App.css';
+import Feature from '../Feature/Feature';
 
 // This object will allow us to
 // easily convert numbers into US dollar values
@@ -103,11 +107,11 @@ class App extends Component {
         <main>
           <form className="main__form">
             <h2>Customize your laptop</h2>
-            {features}
+            <Feature />
           </form>
           <section className="main__summary">
             <h2>Your cart</h2>
-            {summary}
+            <Cart />
             <div className="summary__total">
               <div className="summary__total__label">Total</div>
               <div className="summary__total__value">
