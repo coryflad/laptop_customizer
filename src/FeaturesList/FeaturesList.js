@@ -5,7 +5,11 @@ import './FeaturesList.css'
 class FeaturesList extends React.Component {
     render() {
         return (
-            <Feature />
+            <div>
+                <h2>Feature List</h2>
+                <Feature />
+            </div>
+
         )
     }
 }

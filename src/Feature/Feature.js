@@ -5,7 +5,11 @@ import './Feature.css'
 class Feature extends React.Component {
     render() {
         return (
-            <FeatureOption />
+            <div>
+                <h3>Feature</h3>
+                <FeatureOption />
+            </div>
+
         )
     }
 }

@@ -5,7 +5,7 @@ class Total extends React.Component {
     render() {
         return (
             <div>
-
+                <h3>Total Cost</h3>
             </div>
         )
     }
