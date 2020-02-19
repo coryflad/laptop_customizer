@@ -4,12 +4,25 @@ import './FeaturesList.css'
 
 class FeaturesList extends React.Component {
     render() {
+        const {selected} = this.props;
+        const features = Object.keys(this.props.features)
+          .map(key => {
+              return (
+                  <Feature 
+                    name={key} 
+                    key={key} 
+                    options={this.props.features[key]} 
+                    selected={selected}
+                    onSelect={this.props.onSelect}
+                  />
+              )
+          })
+    
         return (
-            <div>
-                <h2>Feature List</h2>
-                <Feature />
-            </div>
-
+          <section className="main__form">
+            <h3>TECH SPECS AND CUSTOMIZATIONS</h3>
+            {features}
+          </section>
         )
     }
 }

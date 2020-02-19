@@ -1,0 +1,9 @@
+  
+  .feature__option {
+    margin-top: 4px;
+    padding: 2px;
+  }
+  
+  .feature__selected {
+    background: #DEDEDE;
+  }
